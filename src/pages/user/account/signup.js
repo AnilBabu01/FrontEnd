@@ -73,7 +73,7 @@ const Signup = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (validate() && captcha) {
+    if (validate()) {
       setLoading(true);
       serverInstance("register", "post", formData)
         .then((res) => {
@@ -198,13 +198,13 @@ const Signup = () => {
                 <Image src={GoogleLog} width={37} height={37} alt="logo" />
                 <p>Continue With Google</p>
               </button> */}
-              <div className="mb-4 flex justify-center items-center">
+              {/* <div className="mb-4 flex justify-center items-center">
                 <ReCAPTCHA
                   sitekey={"6LfwukcqAAAAAFZCpgWPXVDIwDiYP4atRXbP-oo_"}
                   onChange={(value) => setCaptcha(value)}
                   className="max-auto"
                 />
-              </div>
+              </div> */}
               <div>
                 <Button
                   title="Create account"

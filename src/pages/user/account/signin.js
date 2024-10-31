@@ -54,7 +54,7 @@ const SignIn = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (validate() ) {
+    if (validate()) {
       setLoading(true);
       serverInstance("login", "post", formData)
         .then((res) => {
@@ -127,7 +127,13 @@ const SignIn = () => {
                   <p className="text-red-500">{errors.password}</p>
                 )}
               </div>
-             
+              {/* <div className="mb-4 flex justify-center items-center">
+                <ReCAPTCHA
+                  sitekey={"6LfwukcqAAAAAFZCpgWPXVDIwDiYP4atRXbP-oo_"}
+                  onChange={(value) => setCaptcha(value)}
+                  className="max-auto"
+                />
+              </div> */}
               <div>
                 <Button
                   title="Sign In"
