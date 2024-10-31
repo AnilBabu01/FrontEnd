@@ -1,0 +1,11 @@
+.Active {
+  background: #4b4bf3;
+  color: #ffff;
+  border-radius: 2rem;
+
+}
+.Deactive {
+  background: #EA7B22;
+  color: #ffff;
+  border-radius: 2rem;
+}

@@ -1,0 +1,411 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f4f9;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f5f4f9;
+  }
+}
+/* 
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* global.css */
+
+/* Apply styles to the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4b4bf3; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f1f1f1; /* Optional border */
+}
+
+/* Hover effect on the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Firefox-specific scrollbar styling */
+html {
+  scrollbar-width: thin; /* Makes scrollbar thinner in Firefox */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
+.mainContainer {
+  margin-top: 5%;
+}
+nav {
+  background-color: #ffff;
+  color: black;
+}
+
+footer {
+  background-color: #ffff;
+  color: black;
+}
+
+.dark-mode footer {
+  background-color: #121212;
+  color: #ffff;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode nav {
+  background-color: #121212;
+  color: #ffff;
+}
+
+.dark-mode nav .dark {
+  background-color: #333 !important;
+}
+
+.dark-mobile {
+  color: black;
+  background-color: white;
+}
+
+.dark-mode .dark-mobile {
+  color: white;
+  background-color: #121212;
+}
+
+.profileContainer {
+  padding: 0.6rem;
+  border-radius: 64%;
+}
+
+.dark-mode .profileContainer {
+  background-color: #2b2e5e;
+  padding: 0.6rem;
+  border-radius: 64%;
+}
+
+.profileIcon {
+  color: #e17928 !important;
+}
+
+.dark-mode .profileIcon {
+  color: #ffff !important;
+}
+
+.hdText {
+  color: #e17928;
+  font-weight: 700;
+  font-size: 31px;
+  text-align: center;
+}
+
+.pText {
+  color: black;
+  font-size: 17px;
+}
+
+.dark-mode .pText {
+  color: #7c87be;
+}
+.game-name {
+  color: black;
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.dark-mode .game-name {
+  color: #ffff;
+  font-weight: 800;
+  font-size: 22px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.game-desc {
+  color: black;
+  text-align: center;
+}
+
+.dark-mode .game-desc {
+  color: #7c87be;
+}
+
+.reserved-text {
+  color: black;
+  font-size: 14px;
+}
+
+.dark-mode .reserved-text {
+  color: #7f808a;
+  font-size: 14px;
+}
+
+.link-text {
+  color: black;
+  font-size: 14px;
+  margin-right: 11px;
+}
+.dark-mode .link-text {
+  color: #7f808a;
+  font-size: 14px;
+  margin-right: 11px;
+}
+.footer-icon-contaimer {
+  background-color: #7f808a;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-right: 7px;
+}
+
+.activeLink {
+  border-bottom: 2px solid #e17928;
+}
+
+.form-container {
+  /* margin-top: 2%;
+  padding: 1.5rem; */
+}
+
+.dark-mode .form-container {
+  /* margin-top: 2%;
+  padding: 1.5rem; */
+}
+
+.defaultStyles {
+  color: black;
+  border: 1px solid black;
+  background: white;
+  padding-left: 4%;
+  width: 22rem;
+  height: 2.8rem;
+  border-radius: 6px;
+}
+.defaultStyles:focus {
+  outline: none;
+}
+
+.defaultStyles:hover {
+  outline: none;
+  background-color: #e0e0e0;
+}
+
+.dark-mode .defaultStyles {
+  color: black;
+  border: 1px solid black;
+  padding-left: 4%;
+  width: 22rem;
+  height: 2.8rem;
+  border-radius: 6px;
+}
+.label {
+  color: black;
+  margin-bottom: 1%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dark-mode .label {
+  color: #ffff;
+}
+
+.default-botton {
+  background: #4b4bf3;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-btn {
+  border-radius: 3rem;
+}
+
+.dark-mode .Sign-hd {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+  color: #ffff;
+}
+
+.Sign-hd {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 37px;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+  color: black;
+}
+
+.Sign-p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #7f808a;
+}
+
+.sign-with-google {
+  border: 1px solid;
+  border-radius: 6px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.dark-mode .apply-dark {
+  background-color: #0a0a0a;
+}
+
+.apply-dark-text {
+  font-weight: 500;
+}
+
+.dark-mode .apply-dark-text {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.hd-Wallet-Text {
+  color: #e17928;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.p-Wallet-Text {
+  color: black;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.dark-mode .p-Wallet-Text {
+  color: #7c87be;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.table-head {
+  background-color: #4b4bf3;
+  color: #ffffff;
+  padding: 1%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.table-body-row {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  padding: 1%;
+  border-bottom: 1px solid #4b4bf3;
+}
+
+/* Optional CSS for scrollbar styling */
+.scrollable-table {
+  overflow-x: auto;
+}
+
+.scrollable-table::-webkit-scrollbar {
+  height: 8px; /* Adjust height */
+}
+
+.scrollable-table::-webkit-scrollbar-thumb {
+  background-color: darkgray; /* Scrollbar color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+.scrollable-table::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+.flex-action {
+  display: flex;
+}
+
+.delete {
+  border-radius: 5px;
+  width: 30%;
+  height: 2.5rem;
+  background-color: red;
+  margin-right: 2%;
+}
+
+.edit {
+  border-radius: 5px;
+  width: 30%;
+  height: 2.5rem;
+}
+
+.loader {
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.titileHd{
+  font-size: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .hide-in-mobile {
+    display: none;
+  }
+
+  .hdText {
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+
+  .pText {
+    font-size: 15px;
+  }
+  .defaultStyles {
+    width: 100%;
+  }
+  /* .form-container{
+    width: 21rem;
+  } */
+}
